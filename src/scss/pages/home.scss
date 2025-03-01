@@ -19,7 +19,7 @@
       font-size: 46px;
       font-weight: 700;
       line-height: 55px;
-      color: #2d2d2d;
+      color: $heading;
     }
 
     .hero__description {
@@ -210,6 +210,8 @@
     font-size: 36px;
     line-height: 50px;
     text-align: center;
+    color: $heading;
+
 
   }
 
@@ -328,7 +330,7 @@
       font-family: $Faber;
       font-weight: 400;
       font-size: 20px;
-      color: #2d2d2d;
+      color: $heading;
       line-height: 30px;
       letter-spacing: 0%;
       margin-bottom: 40px;
@@ -360,7 +362,7 @@
             font-weight: 400;
             font-size: 19px;
             line-height: 30px;
-            color: #2d2d2d;
+            color: $heading;
             width: 524px;
 
   }
@@ -372,7 +374,6 @@
 .g-6{
   display: flex;
   flex-direction: column;
-  padding: 20px;
   &__heading{
       text-align: center;
       margin-bottom: 30px;
@@ -382,7 +383,7 @@
       font-size: 36px;
       line-height: 50px;
       text-align: center;
-      color: #2d2d2d;
+      color: $heading;
     }
     p{
       font-family: $Faber;
@@ -401,7 +402,7 @@
      .row{
        display: flex;
        justify-content: space-between;
-       gap: 15px;
+       gap: 100px;
       .block {
         flex: 1;
         text-align: center;
@@ -418,7 +419,102 @@
       }
       }
   }
+.g-6__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+
+
+    .left-block {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 61%;
+
+      .column-text {
+        h2.bold {
+          font-family: $Directo;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 50px;
+          color: $heading;
+
+
+        }
+        p {
+          font-family: Faber Sans Pro;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: $heading;
+
+
+        }
+      }
+
+      .icon-text-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 26px;
+
+        .icon-text {
+          display: flex;
+          align-items: center;
+          gap: 37px;
+          width: 286px;
+
+          .icon {
+            svg{
+              width: 55px;
+              height: 47px;
+
+            }
+          }
+          .text {
+            font-family: $Faber;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: $heading;
+
+
+          }
+        }
+      }
+      p{
+        font-family: $Faber;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $heading;
+
+      }
+    }
+
+     .right-block {
+      flex: 1;
+      display: flex;
+      gap: 15px;
+
+      
+      .image-block {
+         min-width: 40%;
+         flex-shrink: 0;
+         right: 200px;
+        position: relative;
+        z-index: -2;
+        top: -50px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
 }
+}/*.g-6*/
 
 
 

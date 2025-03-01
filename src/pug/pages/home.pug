@@ -1,0 +1,123 @@
+main.home
+  .container
+    section.hero
+      .hero__content
+        h1.hero__title KidsBe - продуктивный подход к обучению детей <br> от 3 до 7 лет
+        p.hero__description Книга + мобильное приложение + онлайн-школа <br> работают как единая система для развития речи,<br> ума и навыков общения
+        .hero__form
+          .hero__form-field
+            input.hero__input(type="tel", placeholder="+7") 
+            button.hero__icon.hero__icon--icon-p
+              +svg("icon-p")
+            button.hero__button.hero__button--demo
+              span Получить демо-доступ
+
+
+         
+      .hero__image
+        .background
+        img.hero__img(src="images/kids.png" alt="Дети с книгой KidsBe")
+
+    // Блок features
+    section.features
+      .features__list
+        .features__item
+          .features__icon
+              +svg("f-house")
+          p.features__text Домашняя альтернатива <br> детским центрам
+        .features__item
+          .features__icon
+            +svg("f-wand")
+          p.features__text Простое применение
+        .features__item
+          .features__icon
+            +svg("f-calendar")
+          p.features__text 33 занятия за 2 месяца
+        .features__item
+          .features__icon
+            +svg("f-video")
+          p.features__text Результат с первого урока
+
+  
+  section.g-5
+    .container
+      .g-5
+        h2.g-5__title Откройте ребенку радость увлекательного <br>  развития без скуки и стресса
+        
+
+        .g-5__content
+          .g-5__left
+            .g-5__images
+              .g-5__images--bg
+                +svg("g-5y").g-5y
+                +svg("g-5-g").g-5-g
+              img.g-5__img(src="images/g-5-1.png", alt="Tablet App")
+            .g-5__info
+              .g-5__info-block
+                p Комплект включает печатные материалы, мобильное приложение и доступ к онлайн-школе — занятия проходят сразу в нескольких форматах
+              .g-5__info-block
+                p Программа состоит из 33 уроков и рассчитана в среднем на 2 месяца, однако скорость прохождения у разных детей отличается
+
+
+
+          .g-5__right
+            p.g-5__description Практическое пособие <b> KidsBe </b> создано<br>  для домашнего обучения детей чтению, письму, мышлению и другим навыкам
+             .g-5__text
+               .g-5__text-block
+                 p Методика разработана специалистами по детскому развитию, поэтому эффективна и безопасна
+               .g-5__text-block
+                 p Задания продуманы таким образом, чтобы принести ребенку максимум пользы и удовольствия
+             p.g-5__footer-text Вы получите материалы с подробными инструкциями — <br> просто следуйте рекомендациям, и все пройдет отлично
+
+
+
+  section.g-6
+    .container
+      .g-6
+        .g-6__heading
+          h1 Занимайтесь с удовольствием и достигайте новых вершин следующие 2 месяца и всю жизнь 
+          p <b>KidsBe</b> — это комплексная программа, помогающая получить положительные <br> результаты сразу в нескольких сферах
+
+        .g-6__image-text
+          .row
+            .block
+              +svg("g-6-m")
+              p Text under image 1
+            .block
+              +svg("g-6-brain")
+              p Text under image 2
+            .block
+              +svg("g-6-b")
+              p Text under image 3
+          .row
+            .block
+              +svg("g-6-orig")
+              p Text under image 4
+            .block
+              +svg("g-6-mom")
+              p Text under image 5
+            .block
+              +svg("g-6-mal")
+              p Text under image 6
+
+        .bottom-blocks
+          .left-block
+            .column-text
+              h2.bold Bold Heading
+              p Normal Heading
+            .icon-text-list
+              .icon-text
+                .icon
+                  | Icon 1
+                .text Text for icon 1
+              .icon-text
+                .icon
+                  | Icon 2
+                .text Text for icon 2
+            h2 Another Normal Heading
+
+          .right-block
+            .text-content
+              p Some text content in the right column.
+            .image-block
+              img(src="right-image.jpg", alt="Right Image")

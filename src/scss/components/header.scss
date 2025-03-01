@@ -1,0 +1,233 @@
+@use "variables" as *;
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f4ff;
+
+}
+
+.header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+
+  &__top {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+          height: 90px;
+          border-bottom: 1px #f5f4ff solid;
+
+
+  .logo {
+     width: 105px;
+     height: 47px;
+     &__text{
+      font-size: 13px;
+      line-height: 18px;
+      color: #afacc9;
+     }
+     
+  }
+
+  .socials {
+        display: flex;
+        gap: 7px;
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, fill 0.3s ease;
+        border: 1px solid #e1defc;
+
+        /* Базовый цвет, который задаётся модификаторами */
+        // Например: &--instagram { color: #5B45FF; } и т.д.
+
+        &:hover {
+          background: #5b45ff; // фон меняется при наведении
+          svg {
+            color: #fff; // иконка становится белой
+          }
+        }
+
+        svg {
+          width: 16px;
+          height: 16px;
+          transition: fill 0.3s, background 0.3s;
+          pointer-events: none; // SVG не перехватывает события мыши – hover срабатывает на родительском элементе
+          fill: currentColor;  // Цвет иконки наследуется из свойства color родителя
+        }
+
+        &--instagram { color: #5B45FF; }
+        &--youtube   { color: #5B45FF; }
+        &--facebook  { color: #5B45FF; }
+        &--vk        { color: #5B45FF; }
+        &--whatsapp  { color: #5B45FF; }
+        &--telegram  { color: #5B45FF; }
+        &--phone     { color: #5B45FF; }
+      }
+
+
+  }
+
+ 
+
+
+
+  .social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    border: 1px solid #e1defc; 
+}
+
+
+
+  .contact {
+          display: flex;
+          align-items: center;
+          gap: 28px;
+
+     
+    &__btn-call {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+             /* width: 183px;
+              height: 50px;*/
+              text-decoration: none;
+              transition: background-color 0.3s ease, fill 0.3s ease;
+              background: none;
+              cursor: pointer;
+              font: inherit;
+              color: inherit;
+              border: none;
+              
+
+        &:hover {
+          
+
+          svg {
+            color: #EF584E;
+          }
+        }
+
+        svg {
+          transition: fill 0.3s, background 0.3s;
+          fill: currentColor;
+          width: 183px;
+
+        }
+        &--icon{
+          color: #2dbc7c;
+        }
+  }
+  span{
+        font-family: $Directo;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 52px;
+        margin-right: 28px;
+
+        }
+}
+}
+&__bottom{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+
+  nav.menu {
+  
+  padding: 10px 0;
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 75px; // расстояние между ссылками
+    padding: 0;
+
+    li a {
+      text-decoration: none;
+      color: #8682A7;
+      font-weight: 400;
+      font-family: $Faber;
+      font-size: 16px;
+
+      &:hover {
+        color: #5b45ff;
+      }
+    }
+  }
+}
+}
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.socials {
+  display: flex;        // Располагаем ссылки в строку
+  gap: 10px;            // Расстояние между ссылками
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;        // Размер ссылки (круглая кнопка)
+    height: 40px;
+    border-radius: 50%; // Круглая форма
+    text-decoration: none; // Убираем подчёркивание ссылок
+    transition: background-color 0.3s ease, fill 0.3s ease;
+    
+    // SVG-иконка наследует цвет через currentColor
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+    
+    // При наведении фон становится текущим цветом,
+    // а иконка перекрашивается в белый
+    &:hover {
+      background-color: currentColor;
+      
+      svg {
+        fill: #fff;
+      }
+    }
+    
+    // Модификаторы: задаем базовый цвет для каждой соц.сети
+    
+    
+  }
+}*/

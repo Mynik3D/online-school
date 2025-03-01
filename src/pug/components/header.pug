@@ -1,0 +1,52 @@
+header.header
+  .header__top
+    .container
+      .header__top
+        .logo
+           +svg("logo").logo
+        span.logo__text продуктивный подход <br> к обучению детей
+        .socials
+            a.socials__link.socials__link--instagram(href="#")
+              +svg("instagram")
+            a.socials__link.socials__link--youtube(href="#")
+              +svg("youtube")
+            a.socials__link.socials__link--facebook(href="#")
+              +svg("facebook")
+            a.socials__link.socials__link--vk(href="#")
+              +svg("vk")
+            a.socials__link.socials__link--whatsapp(href="#")
+              +svg("whatsapp")
+            a.socials__link.socials__link--telegram(href="#")
+              +svg("telegram")
+            a.socials__link.socials__link--phone(href="#")
+              +svg("phone")
+
+
+        // Блок контактов
+        .contact
+          span.contact__phone +7 212 342 39 49
+          button.contact__btn-call.contact__btn-call--icon 
+            +svg("phone-a")
+            
+
+        // Блок меню
+  .header__bottom
+    .container
+      .header__bottom
+        nav.menu
+          ul.menu__list
+            li.menu__item
+              a.menu__link(href="#") Что входит в обучение
+            li.menu__item
+              a.menu__link(href="#") Инструменты
+            li.menu__item
+              a.menu__link(href="#") Помощь экспертов
+            li.menu__item
+              a.menu__link(href="#") Стать автором
+            li.menu__item
+              a.menu__link(href="#") Преимущества
+            li.menu__item
+              a.menu__link(href="#") Отзывы
+
+
+  

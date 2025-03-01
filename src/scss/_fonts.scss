@@ -1,0 +1,15 @@
+// stylelint-disable no-empty-source
+// @include font-face("../fonts/FontName/FontName", "FontName", 400, normal);
+@font-face {
+    src: url("../fonts/Directo-Bold.woff") format("woff");
+    font-family: "Directo";
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("../fonts/FaberSansReduced45.woff") format("woff");
+    font-family: "FaberSans";
+    font-weight: 400;
+    font-style: normal;
+}

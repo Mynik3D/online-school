@@ -122,26 +122,29 @@ main.home
               img(src="images/kids2.png", alt="Right Image")
   section.g-33
     .container
-      section.hero
-        .hero__content
-          h1.hero__title 33 занятия — и ваш ребенок на <span> новом уровне </span> знаний 
-          p.hero__description Учитесь без скуки и стресса с <b>KidsBe</b> 
-          .hero__form
-            .hero__form-field
+      section.hero-a
+        .hero-a__content
+          h1.hero-a__title 33 занятия — и ваш ребенок на <span> новом уровне </span> знаний 
+          p.hero-a__description Учитесь без скуки и стресса с <b>KidsBe</b> 
+          .hero-a__form
+            .hero-a__form-field
               .row
                 .field
-                 label.hero__label(for="name") Ваше имя
-                 input.hero__input(type="text" id="name" placeholder="Александр") 
+                 label.field__label(for="name") Ваше имя
+                 input.field__input(type="text" id="name" placeholder="Александр") 
                 .field
-                 label.hero__label(for="phone") Ваш телефон
-                 input.hero__input(type="tel" id="phone" placeholder="+7")
-              .row              
-                span Нажимая на кнопку, Вы даёте согласие<br> на обработку персональных данных
-                button.hero__button.hero__button--demo
-                  span Получить демо-доступ
+                 label.field__label(for="phone") Ваш телефон
+                 input.field__input(type="tel" id="phone" placeholder="+7")
+              .row
+                .text-pt 
+                  .icon
+                    +svg("y")           
+                  span.pc Нажимая на кнопку, Вы даёте согласие<br> на обработку персональных данных
+                button.hero-a__button.hero__button--demo
+                  span Узнать стоимость
 
 
            
-        .hero__image
+        .hero-a__image
           .background
-          img.hero__img(src="images/kid1.png" alt="Дети с книгой KidsBe")
+          img.hero-a__img(src="images/kid1.png" alt="Дети с книгой KidsBe")

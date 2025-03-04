@@ -124,15 +124,19 @@ main.home
     .container
       section.hero
         .hero__content
-          h1.hero__title 33 занятия — и ваш ребенок на новом уровне знаний 
-          p.hero__description 33 занятия — и ваш ребенок на новом уровне знаний 
+          h1.hero__title 33 занятия — и ваш ребенок на <span> новом уровне </span> знаний 
+          p.hero__description Учитесь без скуки и стресса с <b>KidsBe</b> 
           .hero__form
             .hero__form-field
               .row
-                input.hero__input(type="tel", placeholder="Александр") 
-                input.hero__input(type="tel", placeholder="+7") 
+                .field
+                 label.hero__label(for="name") Ваше имя
+                 input.hero__input(type="text" id="name" placeholder="Александр") 
+                .field
+                 label.hero__label(for="phone") Ваш телефон
+                 input.hero__input(type="tel" id="phone" placeholder="+7")
               .row              
-                span Нажимая на кнопку, Вы даёте согласие на обработку персональных данных
+                span Нажимая на кнопку, Вы даёте согласие<br> на обработку персональных данных
                 button.hero__button.hero__button--demo
                   span Получить демо-доступ
 

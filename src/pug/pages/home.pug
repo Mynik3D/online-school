@@ -39,68 +39,68 @@ main.home
           p.features__text Результат с первого урока
 
   
-  section.g-5
+  section.g-2
     .container
-      .g-5
-        h2.g-5__title Откройте ребенку радость увлекательного <br>  развития без скуки и стресса
+      .g-2
+        h2.g-2__title Откройте ребенку радость увлекательного <br>  развития без скуки и стресса
         
 
-        .g-5__content
-          .g-5__left
-            .g-5__images
-              .g-5__images--bg
-                +svg("g-5y").g-5y
-                +svg("g-5-g").g-5-g
-              img.g-5__img(src="images/g-5-1.png", alt="Tablet App")
-            .g-5__info
-              .g-5__info-block
+        .g-2__content
+          .g-2__left
+            .g-2__images
+              .g-2__images--bg
+                +svg("g-2y").g-2y
+                +svg("g-2-g").g-2-g
+              img.g-2__img(src="images/g-2-1.png", alt="Tablet App")
+            .g-2__info
+              .g-2__info-block
                 p Комплект включает печатные материалы, мобильное приложение и доступ к онлайн-школе — занятия проходят сразу в нескольких форматах
-              .g-5__info-block
+              .g-2__info-block
                 p Программа состоит из 33 уроков и рассчитана в среднем на 2 месяца, однако скорость прохождения у разных детей отличается
 
 
 
-          .g-5__right
-            p.g-5__description Практическое пособие <b> KidsBe </b> создано<br>  для домашнего обучения детей чтению, письму, мышлению и другим навыкам
-             .g-5__text
-               .g-5__text-block
+          .g-2__right
+            p.g-2__description Практическое пособие <b> KidsBe </b> создано<br>  для домашнего обучения детей чтению, письму, мышлению и другим навыкам
+             .g-2__text
+               .g-2__text-block
                  p Методика разработана специалистами по детскому развитию, поэтому эффективна и безопасна
-               .g-5__text-block
+               .g-2__text-block
                  p Задания продуманы таким образом, чтобы принести ребенку максимум пользы и удовольствия
-             p.g-5__footer-text Вы получите материалы с подробными инструкциями — <br> просто следуйте рекомендациям, и все пройдет отлично
+             p.g-2__footer-text Вы получите материалы с подробными инструкциями — <br> просто следуйте рекомендациям, и все пройдет отлично
 
 
 
-  section.g-6
+  section.g-3
     .container
-      .g-6
-        .g-6__heading
+      .g-3
+        .g-3__heading
           h1 Занимайтесь с удовольствием и достигайте новых вершин следующие 2 месяца и всю жизнь 
           p <b>KidsBe</b> — это комплексная программа, помогающая получить положительные <br> результаты сразу в нескольких сферах
 
-        .g-6__image-text
+        .g-3__image-text
           .row
             .block
-              +svg("g-6-m")
+              +svg("g-3-m")
               p Равномерное развитие обоих полушарий<br>  мозга и межполушарных связей
             .block
-              +svg("g-6-brain")
+              +svg("g-3-brain")
               p Укрепление памяти<br>  и внимания
             .block
-              +svg("g-6-b")
+              +svg("g-3-b")
               p Развитие мышления<br>  и познавательного интереса
           .row
             .block
-              +svg("g-6-orig")
+              +svg("g-3-orig")
               p Раскрытие творческих<br>  способностей
             .block
-              +svg("g-6-mom")
+              +svg("g-3-mom")
               p  Налаживание эмоциональных<br>  связей с родителями                                                                                             
             .block
-              +svg("g-6-mal")
+              +svg("g-3-mal")
               p Повышение<br>  самостоятельности
 
-        .g-6__bottom
+        .g-3__bottom
           .left-block
             .column-text
               h2.bold Гармония традиционных методик <br> и новейших возможностей педагогики 
@@ -108,11 +108,11 @@ main.home
             .icon-text-list
               .icon-text
                 .icon
-                  +svg("g-6-video")
+                  +svg("g-3-video")
                 .text Читать и писать с помощью красивых книг, прописей, карточек
               .icon-text
                 .icon
-                  +svg("g-6-app")
+                  +svg("g-3-app")
                 .text Слушать, запоминать и играть в мобильном приложении 
 
             p Разные варианты работы поддерживают интерес ребенка <br> к занятиям и взаимно усиливают друг друга, что помогает<br> учиться без скуки и развиваться гармонично. 
@@ -120,7 +120,7 @@ main.home
           .right-block
             .image-block
               img(src="images/kids2.png", alt="Right Image")
-  section.g-33
+  section.g-4
     .container
       section.hero-a
         .hero-a__content
@@ -128,23 +128,51 @@ main.home
           p.hero-a__description Учитесь без скуки и стресса с <b>KidsBe</b> 
           .hero-a__form
             .hero-a__form-field
-              .row
+              .hero-a__form-group
                 .field
                  label.field__label(for="name") Ваше имя
                  input.field__input(type="text" id="name" placeholder="Александр") 
                 .field
                  label.field__label(for="phone") Ваш телефон
                  input.field__input(type="tel" id="phone" placeholder="+7")
-              .row
-                .text-pt 
-                  .icon
+              .hero-a__form-group
+                .hero-a__privacy
+                  .hero-a__privacy-icon
                     +svg("y")           
-                  span.pc Нажимая на кнопку, Вы даёте согласие<br> на обработку персональных данных
-                button.hero-a__button.hero__button--demo
+                  span.hero-a__privacy-text Нажимая на кнопку, Вы даёте согласие<br> на обработку персональных данных
+                button.hero-a__button
                   span Узнать стоимость
 
 
            
         .hero-a__image
-          .background
+          .hero-a__image-bg
           img.hero-a__img(src="images/kid1.png" alt="Дети с книгой KidsBe")
+
+  section.g-2
+    .container
+      .g-2__content
+        .g-2__heading
+          h1 Занимайтесь с удовольствием и достигайте новых вершин следующие 2 месяца и всю жизнь
+          p <b>KidsBe</b> — это комплексная программа, помогающая получить положительные <br> результаты сразу в нескольких сферах
+        .dev-map
+          .dev-map__row
+            .dev-map__block
+              .dev-map__icon
+                img(src="path-to-your-icon1.png", alt="Icon 1")
+              .dev-map__text This is text for block 1
+            .dev-map__block
+              .dev-map__icon
+                img(src="path-to-your-icon2.png", alt="Icon 2")
+              .dev-map__text This is text for block 2
+            .dev-map__block
+              .dev-map__icon
+                img(src="path-to-your-icon3.png", alt="Icon 3")
+              .dev-map__text This is text for block 3
+            .dev-map__block
+              .dev-map__icon
+                img(src="path-to-your-icon4.png", alt="Icon 4")
+              .dev-map__text This is text for block 4
+
+
+

@@ -149,30 +149,44 @@ main.home
           .hero-a__image-bg
           img.hero-a__img(src="images/kid1.png" alt="Дети с книгой KidsBe")
 
-  section.g-2
+  section.g-5
     .container
-      .g-2__content
-        .g-2__heading
-          h1 Занимайтесь с удовольствием и достигайте новых вершин следующие 2 месяца и всю жизнь
-          p <b>KidsBe</b> — это комплексная программа, помогающая получить положительные <br> результаты сразу в нескольких сферах
+      .g-5__content
+        .g-5__heading
+          h1 Полный арсенал развивающих инструментов в вашем смартфоне
+          p Часть заданий и полезной информации для родителей доступна<br> в мобильном приложении. Оно включает: 
         .dev-map
           .dev-map__row
             .dev-map__block
               .dev-map__icon
-                img(src="path-to-your-icon1.png", alt="Icon 1")
-              .dev-map__text This is text for block 1
-            .dev-map__block
-              .dev-map__icon
-                img(src="path-to-your-icon2.png", alt="Icon 2")
-              .dev-map__text This is text for block 2
-            .dev-map__block
-              .dev-map__icon
-                img(src="path-to-your-icon3.png", alt="Icon 3")
-              .dev-map__text This is text for block 3
-            .dev-map__block
-              .dev-map__icon
-                img(src="path-to-your-icon4.png", alt="Icon 4")
-              .dev-map__text This is text for block 4
+                +svg("table")
+              .dev-map__text
+                p Карты развития ФГОС — перечни умений и навыков детей в разном возрасте и бланки для личных заметок — просто введите возраст ребенка, и приложение покажет, что он уже должен уметь. 
 
+            .dev-map__block
+              .dev-map__icon--puzz
+                +svg("puzz")
+              .dev-map__text
+                p Мультфильмы и мини-игры с элементами дополненной реальности для вовлечения в образовательный процесс. 
+
+            .dev-map__block
+              .dev-map__icon
+                +svg("tv")
+              .dev-map__text
+                p Видеоуроки с подробными инструкциями по выполнению физических и логопедических упражнений. 
+
+            .dev-map__block
+              .dev-map__icon
+                +svg("chat")
+              .dev-map__text
+                p Чат со специалистами для оперативной поддержки и личных консультаций
+
+        
+        .section-demo
+          .section-demo__text
+            p Приложение удобно и интуитивно понятно.<br> Все получится, даже если вы впервые пробуете такой формат обучения.
+          .section-demo__button
+            button Получить демо-доступ
+       
 
 

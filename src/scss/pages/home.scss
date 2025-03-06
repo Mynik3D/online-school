@@ -522,7 +522,7 @@
 
 
 
-.g-4{
+.g-4 {
       background: #7967ff;
       padding-top: 68px;
 .hero-a {
@@ -644,7 +644,7 @@
     &-bg {
       position: absolute;
       inset: 0;
-      background: url("../images/sprites/svg/g-4.svg") no-repeat;
+      background: url("../images/sprites/svg/g-4 .svg") no-repeat;
       background-position: 25px 38px;
       z-index: -1;
     }
@@ -656,11 +656,129 @@
   }
 }
 
-} /*g-4*/
+} /*g-4 */
+
+
+
+.g-5{
+    padding-top: 90px;
+
+    &__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-direction: column;
 
 
 
 
+      .dev-map {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__row {
+              display: flex;
+              justify-content: space-between;
+              gap: 20px;
+              width: 100%;
+              max-width: 1200px;
+            }
+
+            &__block {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              flex: 1;
+              padding: 30px;
+              background: #fff;
+              border-radius: 20px;
+              gap: 4px;
+            }
+
+            &__icon {
+              width: 80px;
+              height: 80px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 30px;
+              &--puzz{
+                margin-bottom: 43px;
+                width: 66px;
+                height: 66px;
+              }
+            }
+
+            &__text {
+              p{
+                font-family: $Faber;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $heading;
+
+              }
+            }
+}
+    .section-demo{
+      text-align: center;
+      margin-bottom: 30px;
+      &__text{
+        p{
+          font-family: Faber Sans Pro;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          text-align: center;
+          color: #6d698c;
+          margin-bottom: 23px;
+        }
+      }
+      &__button{
+        button{
+           background: #ef584e;
+            color: #fff;
+            padding: 13px 38px;
+            border: none;
+            border-radius: 15px 50px 15px 50px;
+            height: 55px;
+            width: 272px;
+            cursor: pointer;
+            span {
+              display: inline-block;
+            }
+            &:hover {
+              background: #ffcf3c;;
+            }
+        }
+      }
+    }
+    }
+    &__heading{
+      h1{
+        font-family: $Directo;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        letter-spacing: 0%;
+        text-align: center;
+
+      }
+      p{
+      font-family: $Faber;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      color: #6d698c;
+
+    }
+    }
+    
+}
 
 
 

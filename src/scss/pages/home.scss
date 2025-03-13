@@ -87,7 +87,7 @@
         }
 
         &::placeholder {
-          color: #6d698c;
+          color: $parag;
           padding-left: 28px;
           font-size: 18px;
         }
@@ -183,7 +183,7 @@
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0%;
-      color: #6d698c;
+      color: $parag;
 
     }
   }
@@ -294,7 +294,7 @@
             font-size: 14px;
             line-height: 22px;
             letter-spacing: 0%;
-            color: #6d698c;
+            color: $parag;
 
           }
     
@@ -352,7 +352,7 @@
       font-size: 14px;
       line-height: 22px;
       text-align: left;
-      color: #6d698c;
+      color: $parag;
     }
     
   }
@@ -392,7 +392,7 @@
       font-size: 20px;
       line-height: 30px;
       text-align: center;
-      color: #6d698c;
+      color: $parag;
 
     }
   }
@@ -525,6 +525,7 @@
 .g-4 {
       background: #7967ff;
       padding-top: 68px;
+
 .hero-a {
   position: relative;
   display: flex;
@@ -663,6 +664,7 @@
 .g-5{
     padding-top: 90px;
 
+
     &__content{
       display: flex;
       justify-content: space-between;
@@ -733,7 +735,7 @@
           line-height: 24px;
           letter-spacing: 0%;
           text-align: center;
-          color: #6d698c;
+          color: $parag;
           margin-bottom: 23px;
         }
       }
@@ -773,10 +775,106 @@
       font-size: 20px;
       line-height: 30px;
       text-align: center;
-      color: #6d698c;
+      color: $parag;
 
     }
     }
+
+    &__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+
+
+    .left-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 47%;
+
+      .column-text {
+        h1{
+          font-family: $Directo;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 50px;
+          color: $heading;
+
+
+        }
+        p {
+          font-family: $Faber;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: $heading;
+
+
+        }
+      }
+
+      .icon-text-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 26px;
+
+        .icon-text {
+          display: flex;
+          align-items: center;
+          gap: 37px;
+          width: 286px;
+
+          .icon {
+            svg{
+              width: 55px;
+              height: 47px;
+
+            }
+          }
+          .text {
+            font-family: $Faber;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: $heading;
+
+
+          }
+        }
+      }
+      p{
+        font-family: $Faber;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $heading;
+
+      }
+    }
+
+     .right-block {
+      flex: 1;
+      display: flex;
+      gap: 15px;
+
+      
+      .image-block {
+         min-width: 40%;
+         flex-shrink: 0;
+         right: 0;
+        position: relative;
+        z-index: -2;
+        top: -32px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+}
     
 }
 
@@ -784,8 +882,40 @@
 
 
 
+.reviews-section{
+                  display: flex;
+                  justify-content: space-between;
+                  *{
+                    flex-basis: 50%;
+                  }
+                   &__title{
+                      font-family: $Directo;
+                      font-weight: 700;
+                      font-size: 36px;
+                      line-height: 50px;
+                      color: $heading;
+                    }
+                  &__text{
+                      display: flex;
+                      flex-direction: column;
+                      gap: 20px; // Регулирует отступ между параграфами
+                      font-size: 16px;
+                      line-height: 1.5;
+                    p{
+                      font-family: $Faber;
+                      font-weight: 400;
+                      font-size: 20px;
+                      line-height: 30px;
+                      color: $parag;
+                    }
+                      
 
-
+                    }
+                    &__right{
+                      padding-top: 70px;
+                   
+                    }
+}
 
 
 

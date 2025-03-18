@@ -571,6 +571,7 @@
       display: flex;
       gap: 22px;
       align-items: center;
+      justify-content: space-between;
     }
   }
 
@@ -603,7 +604,7 @@
 
   &__privacy {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 14px;
 
     &-icon {
@@ -864,7 +865,7 @@
       .image-block {
          min-width: 40%;
          flex-shrink: 0;
-         right: 0;
+         right: -26px;
         position: relative;
         z-index: -2;
         top: -32px;
@@ -916,6 +917,468 @@
                    
                     }
 }
+
+
+
+.g-6 {
+      background: #32b47a;;
+      padding-top: 68px;
+
+.hero-b {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__content {
+    margin-right: -110px;
+  }
+
+  &__title {
+    font-family: $Directo;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    color: #fff;
+    span {
+      color: #ffcf3c;
+    }
+  }
+
+  &__description {
+    font-family: $Faber;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 26px;
+
+    &-field {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-group {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__label {
+      font-family: $Faber;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    &__input {
+      width: 272px;
+      height: 55px;
+      padding-left: 40px;
+      border: none;
+      outline: none;
+      background: #fff;
+      border-radius: 15px 50px 15px 50px;
+      font-size: 18px;
+      color: #333;
+      &::placeholder {
+        color: #b7b4d3;
+      }
+    }
+  }
+
+  &__privacy {
+    display: flex;
+    align-items: start;
+    gap: 14px;
+
+    &-icon {
+      svg {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    &-text {
+      font-family: $Faber;
+      font-size: 12px;
+      color: #d5d0ff;
+    }
+  }
+
+  &__button {
+    background: #ffcf3c;;
+    color: $heading;
+    padding: 13px 38px;
+    border: none;
+    border-radius: 15px 50px 15px 50px;
+    height: 55px;
+    width: 272px;
+    cursor: pointer;
+    justify-content: space-between;
+
+    span {
+      display: inline-block;
+    }
+    &:hover {
+      background: #ef584e;
+      color: #fff;
+    }
+  }
+
+  &__image {
+    position: relative;
+    flex-shrink: 0;
+    right: 42px;
+    z-index: 3;
+
+     &-bg {
+      position: absolute; 
+      background: url("../images/sprites/svg/g-6-icon.svg") no-repeat;
+      z-index: -1;
+      inset: 0;
+      position: absolute;
+      top: 50px;
+      left: 52%;
+      transform: translateX(-56%);
+      width: 549px; 
+      height: auto;
+      z-index: -1; // Оставляем его позади картинки
+
+
+
+    }
+
+    .hero-b__img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+}
+
+
+
+
+
+.g-7{
+    padding-top: 83px;
+
+
+    &__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-direction: column;
+
+
+
+
+      .dev-map {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+
+            &__row {
+              display: flex;
+              justify-content: space-between;
+              gap: 20px;
+              width: 100%;
+              max-width: 1200px;
+            }
+
+            &__block {
+              display: flex;
+              flex-direction: column;
+              flex: 1;
+              padding: 30px;
+              background: #fff;
+              border-radius: 10px;
+              gap: 25px;
+            }
+
+            &__icon-text {
+                    display: flex;
+                    align-items: center;
+                    gap: 41px; 
+                    span{
+                      font-family: $Directo;
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 30px;
+
+                    }
+                  }
+            &__icon {
+              width: 64px;
+              height: 64px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              &--puzz{
+                width: 66px;
+                height: 66px;
+              }
+            }
+
+            &__text {
+              p{
+                font-family: $Faber;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $parag;
+
+              }
+            }
+}
+    .section-demo{
+      text-align: center;
+      margin-bottom: 30px;
+      &__text{
+        p{
+          font-family: Faber Sans Pro;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0%;
+          text-align: center;
+          color: $parag;
+          margin-bottom: 23px;
+        }
+      }
+      &__button{
+        button{
+           background: #ef584e;
+            color: #fff;
+            padding: 13px 38px;
+            border: none;
+            border-radius: 15px 50px 15px 50px;
+            height: 55px;
+            width: 245px;
+            cursor: pointer;
+            span {
+              display: inline-block;
+            }
+            &:hover {
+              background: #ffcf3c;;
+            }
+        }
+      }
+    }
+    }
+    &__heading{
+      h1{
+        font-family: $Directo;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        letter-spacing: 0%;
+        text-align: center;
+
+      }
+      p{
+      font-family: $Faber;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      color: $parag;
+
+    }
+    }
+
+    &__header{
+    display: flex;
+    justify-content: space-between;
+    background: #eae7ff;
+    padding: 50px; 
+    border-radius: 30px 30px 200px 30px;   
+
+
+    .right-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 47%;
+
+      &__column-text {
+        h1{
+          font-family: $Directo;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 50px;
+          color: $heading;
+        }
+
+        p {
+          font-family: $Faber;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: $heading;
+
+
+        }
+      }
+         &__text{
+            display: flex;
+            flex-direction: column;
+            gap: 20px; // Регулирует отступ между параграфами
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+      .icon-text-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 26px;
+
+        .icon-text {
+          display: flex;
+          align-items: center;
+          gap: 37px;
+          width: 286px;
+
+          .icon {
+            svg{
+              width: 55px;
+              height: 47px;
+
+            }
+          }
+          .text {
+            font-family: $Faber;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: $heading;
+
+
+          }
+        }
+      }
+      p{
+        font-family: $Faber;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $heading;
+
+      }
+    }
+
+     .left-block {
+      flex: 1;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+
+      
+      .image-block {
+         min-width: 40%;
+         flex-shrink: 0;
+         right: -94px;
+        position: relative;
+        z-index: 0;
+        top: 50px;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+}
+    
+}
+
+
+
+
+
+.reviews-section{
+                  display: flex;
+                  justify-content: space-between;
+                  *{
+                    flex-basis: 50%;
+                  }
+                  
+                  &__text{
+                      display: flex;
+                      flex-direction: column;
+                      gap: 20px; // Регулирует отступ между параграфами
+                      font-size: 16px;
+                      line-height: 1.5;
+                    p{
+                      font-family: $Faber;
+                      font-weight: 400;
+                      font-size: 20px;
+                      line-height: 30px;
+                      color: $parag;
+                    }
+                      
+
+                    }
+                    &__right{
+                      padding-top: 70px;
+                   
+                    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

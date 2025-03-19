@@ -917,7 +917,34 @@
                    
                     }
 }
+.reviews-section{
+                  display: flex;
+                  justify-content: space-between;
+                  *{
+                    flex-basis: 50%;
+                  }
+                  
+                  &__text{
+                      display: flex;
+                      flex-direction: column;
+                      gap: 20px; // Регулирует отступ между параграфами
+                      font-size: 16px;
+                      line-height: 1.5;
+                    p{
+                      font-family: $Faber;
+                      font-weight: 400;
+                      font-size: 20px;
+                      line-height: 30px;
+                      color: $parag;
+                    }
+                      
 
+                    }
+                    &__right{
+                      padding-top: 70px;
+                   
+                    }
+}
 
 
 .g-6 {
@@ -1023,11 +1050,9 @@
   &__button {
     background: #ffcf3c;;
     color: $heading;
-    padding: 13px 38px;
+    padding: 19px 71px;
     border: none;
     border-radius: 15px 50px 15px 50px;
-    height: 55px;
-    width: 272px;
     cursor: pointer;
     justify-content: space-between;
 
@@ -1168,11 +1193,9 @@
         button{
            background: #ef584e;
             color: #fff;
-            padding: 13px 38px;
+            padding: 18px 68px;
             border: none;
             border-radius: 15px 50px 15px 50px;
-            height: 55px;
-            width: 245px;
             cursor: pointer;
             span {
               display: inline-block;
@@ -1309,6 +1332,127 @@
       }
     }
 }
+
+.review-tabs {
+    text-align: center;
+    margin-bottom: 103px;
+
+  
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 38px;
+    transition: 0.3s;
+    position: relative;
+    span{
+      display: inline-block; // Ограничивает ширину границы длиной текста
+      border-bottom: 1px dashed transparent;
+      padding-bottom: 2px;
+      border-bottom-color: #5b45ff;
+    }
+    
+    &--active span {
+    border-bottom-color: #5b45ff; // Показываем только у активной кнопки
+  }
+
+
+    &--active {
+      border-radius: 15px 50px 15px 50px;
+      background: #5C3BFE;
+      color: #fff;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 54px;
+  }
+
+  &__panel {
+      display: none; 
+      width: 100%;
+      max-width: 1200px;
+      gap: 30px;
+      align-items: flex-start;
+
+    &--active {
+      display: flex;
+    }
+  }
+   &__media {
+    flex: 1;
+    max-width: 560px; // фиксируем ширину видео
+  }
+  &__audio {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__audio-item {
+    width: 100%;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  &__ask {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.block {
+  background: #fff;
+  padding-bottom: 70px;
+  width: 564px;
+  height: 569px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-end;
+}
+
+.ask-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 17px 62px;
+  color: #513cf3;
+  border: 1px #513cf3 solid;
+  border-radius: 15px 50px 15px 50px;
+  cursor: pointer;
+  background: #fff;
+  &:hover{
+    background: #5b45ff;
+    color: #fff;
+  }
+}
+
+  
+}
+
     
 }
 
@@ -1316,34 +1460,170 @@
 
 
 
-.reviews-section{
-                  display: flex;
-                  justify-content: space-between;
-                  *{
-                    flex-basis: 50%;
-                  }
-                  
-                  &__text{
-                      display: flex;
-                      flex-direction: column;
-                      gap: 20px; // Регулирует отступ между параграфами
-                      font-size: 16px;
-                      line-height: 1.5;
-                    p{
-                      font-family: $Faber;
-                      font-weight: 400;
-                      font-size: 20px;
-                      line-height: 30px;
-                      color: $parag;
-                    }
-                      
 
-                    }
-                    &__right{
-                      padding-top: 70px;
-                   
-                    }
+
+
+
+
+
+
+
+
+
+
+
+.g-8 {
+      background: #ef6a62;
+      padding-bottom: 30px;
+
+.hero-b {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__content {
+    margin-right: -110px;
+  }
+
+  &__title {
+    font-family: $Directo;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    color: #fff;
+    span {
+      color: #ffcf3c;
+    }
+  }
+
+  &__description {
+    font-family: $Faber;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 26px;
+
+    &-field {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-group {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__label {
+      font-family: $Faber;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    &__input {
+      width: 272px;
+      height: 55px;
+      padding-left: 40px;
+      border: none;
+      outline: none;
+      background: #fff;
+      border-radius: 15px 50px 15px 50px;
+      font-size: 18px;
+      color: #333;
+      &::placeholder {
+        color: #b7b4d3;
+      }
+    }
+  }
+
+  &__privacy {
+    display: flex;
+    align-items: start;
+    gap: 14px;
+
+    &-icon {
+      svg {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    &-text {
+      font-family: $Faber;
+      font-size: 12px;
+      color: #d5d0ff;
+    }
+  }
+
+  &__button {
+    background: #ffcf3c;;
+    color: $heading;
+    padding: 19px 71px;
+    border: none;
+    border-radius: 15px 50px 15px 50px;
+    cursor: pointer;
+    justify-content: space-between;
+
+    span {
+      display: inline-block;
+    }
+    &:hover {
+      background: #ef584e;
+      color: #fff;
+    }
+  }
+
+  &__image {
+    position: relative;
+    flex-shrink: 0;
+    right: -42px;
+    top: 30px;
+    z-index: 3;
+
+     &-bg {
+      position: absolute; 
+      background: url("../images/sprites/svg/g-8-icon.svg") no-repeat;
+      z-index: -1;
+      inset: 0;
+      position: absolute;
+      top: 50px;
+      left: 72%;
+      transform: translateX(-56%);
+      width: 549px; 
+      height: auto;
+      
+
+
+
+    }
+
+    .hero-b__img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
+
+}
+
+
 
 
 

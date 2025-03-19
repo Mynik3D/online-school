@@ -304,27 +304,83 @@ main.home
                   +svg("baby-boy")
                 span Для детей<br> с особенностями развития
               .dev-map__text
-                p Программа подходит малышам с ЗРР, ЗПР и СДВГ
+                p Программа подходит малышам<br>с ЗРР, ЗПР и СДВГ
 
 
         
         .section-demo
           .section-demo__text
-            p Приложение удобно и интуитивно понятно.<br> Все получится, даже если вы впервые пробуете такой формат обучения.
-          .section-demo__button
-            button Получить демо-доступ
+            h1 Родители и педагоги отмечают захватывающее содержание и эффективность методик 
+         
        
-        .reviews-section
-          .reviews-section__left
-            .review
-              .review__icon
-                img(src="images/review.gif", alt="review-icon")
-              
-          
-          .reviews-section__right
-              h1.reviews-section__title Пошаговые инструкции и обратная связь от экспертов 
-              .reviews-section__text
-                p В обучающую методику интегрирована онлайн-школа KidsBe. С первого дня вы получите доступ к пошаговым инструкциям по домашнему обучению в целом и отдельным занятиям в частности. Полезные советы и видеоинструкции упростят обучение ребенка. 
-                p В онлайн-школе вы будете получать от педагогов обратную связь по прогрессу, проверку домашних заданий и персональные рекомендации.
+        section.review-tabs
+          .review-tabs__buttons
+            button.review-tabs__button.review-tabs__button--active(data-tab="parents") 
+              span Родители
+            button.review-tabs__button(data-tab="teachers") 
+              span Педагоги
+
+
+          .review-tabs__content
+            .review-tabs__panel.review-tabs__panel--active(data-tab="parents")
+              .review-tabs__media
+               img(src="images/p.png", alt="Right Image")
+              .review-tabs__audio
+                .review-tabs__audio-item
+                  img(src="images/1.png", alt="Right Image")
+
+                .review-tabs__audio-item
+                  img(src="images/2.png", alt="Right Image")
+
+            .review-tabs__panel(data-tab="teachers")
+              .review-tabs__media
+                img(src="images/p.png", alt="Right Image")
+              .review-tabs__audio
+                .review-tabs__audio-item
+                  img(src="images/3.png", alt="Right Image")
+
+                .review-tabs__audio-item
+                  img(src="images/4.png", alt="Right Image")
+
+
+          .review-tabs__ask
+            .block
+              button.ask-button Спросить лично
+
+            .block
+              button.ask-button Спросить лично
+
+
+  section.g-8
+      .container
+        section.hero-b
+          .hero-b__content
+            h1.hero-b__title <span>Откройте мир</span> знаний своему ребенку 
+            p.hero-b__description Пусть старт в образовании пройдет без стресса и скуки 
+
+   
+            .hero-b__form
+              .hero-b__form-field
+                .hero-b__form-group
+                  .field
+                   label.field__label(for="name") Ваше имя
+                   input.field__input(type="text" id="name" placeholder="Александр") 
+                  .field
+                   label.field__label(for="phone") Ваш телефон
+                   input.field__input(type="tel" id="phone" placeholder="+7")
+                .hero-b__form-group
+                  .hero-b__privacy
+                    .hero-b__privacy-icon
+                      +svg("y")           
+                    span.hero-b__privacy-text Нажимая на кнопку, Вы даёте согласие<br> на обработку персональных данных
+                  button.hero-b__button
+                    span Узнать стоимость
+
+
+             
+          .hero-b__image
+            .hero-b__image-bg
+            img.hero-b__img(src="images/g-8.png" alt="Дети с книгой KidsBe")      
+
 
         

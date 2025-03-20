@@ -80,6 +80,7 @@
         border: none;
         padding-left: 40px;
         width: 331px;
+        height: 55px;
 
 
         &:focus {
@@ -107,7 +108,7 @@
    &__button {
             background: #5b45ff;
             color: #fff;
-            padding: 13px 38px 12px 47px;
+            padding: 13px 30px 12px 47px;
             border: none;
              /* Задаем разные радиусы */
             border-top-left-radius: 15px;
@@ -124,6 +125,13 @@
             span{
                  display: inline-block;
                  transform: rotate(180deg);
+                 font-family: $Faber;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                text-align: center;
+                vertical-align: middle;
+
             }
            
 
@@ -587,8 +595,7 @@
     }
 
     &__input {
-      width: 272px;
-      height: 55px;
+      padding: 17px 13px;
       padding-left: 40px;
       border: none;
       outline: none;
@@ -598,6 +605,7 @@
       color: #333;
       &::placeholder {
         color: #b7b4d3;
+         
       }
     }
   }
@@ -624,14 +632,18 @@
   &__button {
     background: #2dbc7c;
     color: #fff;
-    padding: 13px 38px;
+    padding: 12px 71px;
     border: none;
     border-radius: 15px 50px 15px 50px;
-    height: 55px;
-    width: 272px;
     cursor: pointer;
     span {
       display: inline-block;
+      font-family: $Faber;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      vertical-align: middle;
     }
     &:hover {
       background: #ef584e;
@@ -744,14 +756,16 @@
         button{
            background: #ef584e;
             color: #fff;
-            padding: 13px 38px;
+            padding: 12px 52px;
             border: none;
             border-radius: 15px 50px 15px 50px;
-            height: 55px;
-            width: 272px;
             cursor: pointer;
             span {
-              display: inline-block;
+              font-family: $Faber;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+              text-align: center;
             }
             &:hover {
               background: #ffcf3c;;
@@ -1013,8 +1027,7 @@
     }
 
     &__input {
-      width: 272px;
-      height: 55px;
+      padding: 17px 13px;
       padding-left: 40px;
       border: none;
       outline: none;
@@ -1538,8 +1551,7 @@
     }
 
     &__input {
-      width: 272px;
-      height: 55px;
+      padding: 17px 13px;
       padding-left: 40px;
       border: none;
       outline: none;
@@ -1646,6 +1658,105 @@
 
 
 
+.footer {
+  background: #6d698c; 
+  padding: 20px 0;
+  color: #fff;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #aba8c5;
+    font-family: $Faber;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 15px;
+
+
+     .socials {
+        display: flex;
+        gap: 7px;
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, fill 0.3s ease;
+        border: 1px solid #e1defc;
+
+        /* Базовый цвет, который задаётся модификаторами */
+        // Например: &--instagram { color: #5B45FF; } и т.д.
+
+        &:hover {
+          background: #5b45ff; // фон меняется при наведении
+          svg {
+            color: #fff; // иконка становится белой
+          }
+        }
+
+        svg {
+          width: 16px;
+          height: 16px;
+          transition: fill 0.3s, background 0.3s;
+          pointer-events: none; // SVG не перехватывает события мыши – hover срабатывает на родительском элементе
+          fill: currentColor;  // Цвет иконки наследуется из свойства color родителя
+        }
+
+        &--instagram { color: #fff; }
+        &--youtube   { color: #fff; }
+        &--facebook  { color: #fff; }
+        &--vk        { color: #fff; }
+        &--whatsapp  { color: #fff; }
+        &--telegram  { color: #fff; }
+        &--phone     { color: #fff; }
+      }
+
+
+  }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #444;
+      transition: background 0.3s ease;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: #fff;
+      }
+
+      &:hover {
+        background: #666;
+      }
+    }
+  }
+
+
+}
 
 
 

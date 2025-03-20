@@ -25,8 +25,11 @@ header.header
         // Блок контактов
         .contact
           span.contact__phone +7 212 342 39 49
-          button.contact__btn-call.contact__btn-call--icon 
-            +svg("phone-a")
+          button.contact__btn
+            .contact__btn-icon
+                    +svg("h-icon")          
+            span.contact__btn-text Заказать звонок 
+            //- +svg("phone-a")
             
 
         // Блок меню

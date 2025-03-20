@@ -1,4 +1,5 @@
-@use "variables";
+@use "variables" as *;
+
 
 
 *,
@@ -46,7 +47,7 @@ p {
 a,
 button {
 	outline: none;
-	transition: variables.$duration-normal;
+	transition: $duration-normal;
 	cursor: pointer;
 }
 
@@ -118,7 +119,7 @@ iframe {
 	padding: 0;
 	text-align: center;
 	background-color: transparent;
-	transition: variables.$duration-normal;
+	transition: $duration-normal;
 	user-select: none;
 
 	&__content {
@@ -142,6 +143,11 @@ iframe {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1149px;
+  @include respond-to(medium) {
+          max-width: 768px;
+
+      }
+	
 }
 
 .site {

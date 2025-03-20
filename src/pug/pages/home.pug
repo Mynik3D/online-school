@@ -186,8 +186,9 @@ main.home
           .section-demo__text
             p Приложение удобно и интуитивно понятно.<br> Все получится, даже если вы впервые пробуете такой формат обучения.
           .section-demo__button
-            button Получить демо-доступ
-       
+            button
+              span  Получить демо-доступ
+                      
         .reviews-section
           .reviews-section__left
             .review
@@ -382,5 +383,31 @@ main.home
             .hero-b__image-bg
             img.hero-b__img(src="images/g-8.png" alt="Дети с книгой KidsBe")      
 
+
+  footer.footer
+    .container
+      .footer__content
+        .footer__info
+          p.footer__text ИП Иванов Иван Иванович
+          p.footer__text ИНН 1234567890
+          p.footer__text ОГРНИП 123456789012345
+
+        .footer__socials
+          .socials
+              a.socials__link.socials__link--instagram(href="#")
+                +svg("instagram")
+              a.socials__link.socials__link--youtube(href="#")
+                +svg("youtube")
+              a.socials__link.socials__link--facebook(href="#")
+                +svg("facebook")
+              a.socials__link.socials__link--vk(href="#")
+                +svg("vk")
+              a.socials__link.socials__link--whatsapp(href="#")
+                +svg("whatsapp")
+              a.socials__link.socials__link--telegram(href="#")
+                +svg("telegram")
+              a.socials__link.socials__link--phone(href="#")
+                +svg("phone")
+           
 
         

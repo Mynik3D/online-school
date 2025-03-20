@@ -23,7 +23,10 @@ body {
           align-items: center;
           height: 90px;
           border-bottom: 1px #f5f4ff solid;
+          @include respond-to(medium) {
+           height: 100px;
 
+      }
 
   .logo {
      width: 105px;
@@ -103,48 +106,47 @@ body {
           gap: 28px;
 
      
-    &__btn-call {
-              display: inline-flex;
-              align-items: center;
-              justify-content: center;
-             /* width: 183px;
-              height: 50px;*/
-              text-decoration: none;
-              transition: background-color 0.3s ease, fill 0.3s ease;
-              background: none;
-              cursor: pointer;
-              font: inherit;
-              color: inherit;
-              border: none;
-              
+          &__btn{
+                   display: flex;
+                  align-items: center;
+                  gap: 10px; // Расстояние между иконкой и текстом
+                  padding: 10px 26px;
+                  border: none;
+                  background: #2dbc7c;
+                  color: #fff;
+                  font-size: 16px;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                  border-bottom-left-radius: 30px;
+                  border-bottom-right-radius: 15px;
+                  cursor: pointer;
+                  transition: background 0.3s ease;
 
-        &:hover {
-          
-
-          svg {
-            color: #EF584E;
+                  &:hover {
+                          background: #ef584e;
+                          }
+                  &-icon {
+                        display: flex;
+                        width: 16px;
+                        height: 16px;
+                      }        
+                &-text{
+                  font-family: $Faber;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 30px;
+                  text-align: center;
+                  vertical-align: middle;
+                }      
+              }
+   &__phone{
+             font-family: $Directo;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 52px;
+              margin-right: 28px;
           }
-        }
-
-        svg {
-          transition: fill 0.3s, background 0.3s;
-          fill: currentColor;
-          width: 183px;
-
-        }
-        &--icon{
-          color: #2dbc7c;
-        }
   }
-  span{
-        font-family: $Directo;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 52px;
-        margin-right: 28px;
-
-        }
-}
 }
 &__bottom{
       display: flex;
@@ -163,7 +165,6 @@ body {
     padding: 0;
 
     li a {
-      text-decoration: none;
       color: #8682A7;
       font-weight: 400;
       font-family: $Faber;
@@ -193,42 +194,3 @@ body {
 
 
 
-
-/*
-
-.socials {
-  display: flex;        // Располагаем ссылки в строку
-  gap: 10px;            // Расстояние между ссылками
-
-  &__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;        // Размер ссылки (круглая кнопка)
-    height: 40px;
-    border-radius: 50%; // Круглая форма
-    text-decoration: none; // Убираем подчёркивание ссылок
-    transition: background-color 0.3s ease, fill 0.3s ease;
-    
-    // SVG-иконка наследует цвет через currentColor
-    svg {
-      width: 24px;
-      height: 24px;
-      fill: currentColor;
-    }
-    
-    // При наведении фон становится текущим цветом,
-    // а иконка перекрашивается в белый
-    &:hover {
-      background-color: currentColor;
-      
-      svg {
-        fill: #fff;
-      }
-    }
-    
-    // Модификаторы: задаем базовый цвет для каждой соц.сети
-    
-    
-  }
-}*/
